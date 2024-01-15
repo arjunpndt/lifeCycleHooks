@@ -1,0 +1,5 @@
+/* Bootsrtap will work on all child component of 'app-component because of encapsulation 'None' type */
+@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+/* * {
+  color: red;
+} */

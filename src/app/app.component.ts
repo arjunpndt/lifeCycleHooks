@@ -1,19 +1,19 @@
-import { Component, DoCheck, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+  // here I am using view Encapsulation type 'None' so whatever css you write in 'app.component.css' that will be apply for all the child component
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit, DoCheck {
   title = 'Angular LifeCycle Hooks';
   inputVal = '';
-  user: string[] = ['user', 'user2'];
+  // user: string[] = ['user', 'user2'];
   OnIinit = false;
 
-  constructor() {
-    var user: string[] = [];
-  }
+  constructor() {}
 
   ngOnInit() {
     console.log('OnInit called');
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, DoCheck {
   }
   checkHooks(inputValue: HTMLInputElement): void {
     this.inputVal = inputValue.value;
-    this.user.push(inputValue.value);
-    console.log(this.user);
+    // this.user.push(inputValue.value);
+    // console.log(this.user);
   }
 }

@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChildComponentComponent } from './child-component/child-component.component';
 import { BoldPipe } from './custom-pipes/bold.pipe';
+import { ShadowDomExampleComponent } from './shadow-dom-example/shadow-dom-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChildComponentComponent,
-    BoldPipe
+    BoldPipe,
+    ShadowDomExampleComponent
   ],
   imports: [
     BrowserModule,

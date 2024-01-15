@@ -1,10 +1,11 @@
-<!-- use bold costum pipe here -->
-<p><span [innerHTML]="title | uppercase | bold"></span></p>
-<input type="text" #inputValue />
-<button (click)="checkHooks(inputValue)">Check Hooks</button>
+<div class="container text-center">
+  <p><span [innerHTML]="title | uppercase | bold"></span></p>
+  <input class="m-2" type="text" #inputValue />
+  <button class="btn btn-primary" (click)="checkHooks(inputValue)">
+    Check Hooks
+  </button>
 
-<span NgFor="let u in user"
-  ><p>{{ user }}</p></span
->
-
-<app-child-component [message]="inputVal"></app-child-component>
+  <app-child-component [message]="inputVal"></app-child-component>
+  <!-- <app-shadow-dom-exapmle></app-shadow-dom-exapmle> -->
+  <app-shadow-dom-example></app-shadow-dom-example>
+</div>
