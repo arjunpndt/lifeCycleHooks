@@ -1,2 +1,15 @@
-<p>child-component works!{{ message }}</p>
-<!-- <button class="btn btn-danger">Button</button>s -->
+<!-- Example of NgFor Directive -->
+<ul class="list-inline">
+  <li
+    class="list-inline-item"
+    *ngFor="
+      let value of [
+        'Child Componet with css of',
+        'app-component.css',
+        '(Component:Child Component)'
+      ]
+    "
+  >
+    {{ value }}
+  </li>
+</ul>

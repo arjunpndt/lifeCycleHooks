@@ -4,14 +4,13 @@ import { Component, DoCheck, OnInit, ViewEncapsulation } from '@angular/core';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
+
   // here I am using view Encapsulation type 'None' so whatever css you write in 'app.component.css' that will be apply for all the child component
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent implements OnInit, DoCheck {
-  title = 'Angular LifeCycle Hooks';
-  inputVal = '';
-  // user: string[] = ['user', 'user2'];
-  OnIinit = false;
+  title = 'Angular LifeCycle Hooks & View encapsulation';
+  inputVal = 'Change Button Name';
 
   constructor() {}
 
@@ -40,8 +39,6 @@ export class AppComponent implements OnInit, DoCheck {
     this.title = value;
   }
   checkHooks(inputValue: HTMLInputElement): void {
-    this.inputVal = inputValue.value;
-    // this.user.push(inputValue.value);
-    // console.log(this.user);
+    if (inputValue.value != '') this.inputVal = inputValue.value;
   }
 }

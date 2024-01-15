@@ -1,11 +1,18 @@
 <div class="container text-center">
-  <p><span [innerHTML]="title | uppercase | bold"></span></p>
-  <input class="m-2" type="text" #inputValue />
-  <button class="btn btn-primary" (click)="checkHooks(inputValue)">
-    Check Hooks
-  </button>
+  <div>
+    <p class="mt-4"><span [innerHTML]="title | uppercase | bold"></span></p>
+    <input
+      class="m-2"
+      type="text"
+      placeholder="For OnChanges Hook"
+      #inputValue
+    />
+    <button class="btn btn-primary" (click)="checkHooks(inputValue)">
+      {{ inputVal }}
+    </button>
 
-  <app-child-component [message]="inputVal"></app-child-component>
-  <!-- <app-shadow-dom-exapmle></app-shadow-dom-exapmle> -->
-  <app-shadow-dom-example></app-shadow-dom-example>
+    <app-child-component [message]="inputVal"></app-child-component>
+    <app-shadow-dom-example></app-shadow-dom-example>
+  </div>
+  <div></div>
 </div>
