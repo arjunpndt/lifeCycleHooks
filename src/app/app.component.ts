@@ -9,7 +9,7 @@ export class AppComponent implements OnInit, DoCheck {
   title = 'Angular LifeCycle Hooks';
   inputVal = '';
   user: string[] = ['user', 'user2'];
-  // OnIinit = false;
+  OnIinit = false;
 
   constructor() {
     var user: string[] = [];
