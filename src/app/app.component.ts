@@ -12,7 +12,7 @@ export class AppComponent implements OnInit, DoCheck {
   // OnIinit = false;
 
   constructor() {
-    // var user: string[] = [];
+    var user: string[] = [];
   }
 
   ngOnInit() {
