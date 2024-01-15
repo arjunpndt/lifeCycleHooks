@@ -1,6 +1,7 @@
-<h3><b>Angular LifeCycleHooks</b></h3>
+<!-- use bold costum pipe here -->
+<p><span [innerHTML]="title | uppercase | bold"></span></p>
 <input type="text" #inputValue />
 <button (click)="checkHooks(inputValue)">Check Hooks</button>
-<!-- <p NgIf="title">{{ title }}</p> -->
+
 <p>{{ title }}</p>
 <app-child-component [message]="inputVal"></app-child-component>

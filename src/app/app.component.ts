@@ -6,7 +6,7 @@ import { Component, DoCheck, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, DoCheck {
-  title = 'LifeCycleHooks';
+  title = 'Angular LifeCycle Hooks';
   inputVal = '';
 
   // OnIinit = false;
