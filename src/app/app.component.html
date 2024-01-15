@@ -3,5 +3,8 @@
 <input type="text" #inputValue />
 <button (click)="checkHooks(inputValue)">Check Hooks</button>
 
-<p>{{ title }}</p>
+<span NgFor="let u in user"
+  ><p>{{ user }}</p></span
+>
+
 <app-child-component [message]="inputVal"></app-child-component>
